@@ -1,6 +1,100 @@
 .App {
   text-align: center;
+  
 }
+.heading{
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: fantasy;
+  color: #4e0544;
+  letter-spacing: 2px;
+}
+body{
+background: #c94b4b;
+background: #3494E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.input input{
+  width: 300px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #2c1616;
+  border-radius: 5px;
+}
+
+.suggestionList{
+  width: 300px;
+  margin: 10px auto;
+  height: 150px;
+  background-color: lightgray;
+  overflow-y: auto;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+.suggestions{
+  text-align: left;
+  margin: 10px;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  &:hover{
+    background-color: aquamarine;
+  }
+}
+
+.bucketList{
+width: 300px;
+margin: 50px auto;
+}
+
+.items{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgb(104, 18, 110);
+height: 40px;
+color: aliceblue;
+font-size: 20px;
+font-weight: bold;
+border: none;
+outline: none;
+border-radius: 5px;
+padding: 5px;
+margin: 15px;
+}
+
+.items button{
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 100%;
+  background-color: rgb(104, 18, 110);
+  color: azure;
+  &:hover{
+  background-color: black;
+  cursor: pointer;
+  opacity: 0.8;
+}
+}
+
+.strike{
+  text-decoration: line-through;
+  color: rgb(134, 131, 131);
+}
+
 
 .App-logo {
   height: 40vmin;
